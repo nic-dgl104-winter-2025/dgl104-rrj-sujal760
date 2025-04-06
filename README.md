@@ -547,3 +547,56 @@ Code duplication can lead to substantial maintenance challenges and increase the
 The combination of these principles not only enhances code quality but fosters a disciplined approach to software engineering. Following SOLID and DRY ensures a robust architecture that can evolve over time, leading to sustainable software development practices.
 
 In summary, the video presents critical OOP principles that guide developers toward creating cleaner, more efficient, and maintainable code in a rapidly changing technological landscape. Understanding and applying these principles enhances not only individual code quality but collective project success.
+
+
+# Week 12 
+## Functional Paradigm 
+The video focuses on functional programming, particularly the declarative programming paradigm, which contrasts with imperative programming. The Ashley explains how functional programming can be integrated into object-oriented languages like Kotlin, Java, and Swift. To illustrate the difference between the two paradigms, the example of extracting even numbers from a list of integers is used. The first approach demonstrates imperative programming, characterized by control flows, loops, and manual state management. In this method, a while loop iterates through the list, checking if each number is even using a modulus operation and adding it to a new list. In contrast, the functional programming approach uses a more concise and clearer filter method, greatly enhancing readability and reducing side effects.
+
+## Highlights
+
+### Functional Programming as a Paradigm  
+Emphasizes the attractiveness of functional programming in mobile development due to its concise code structure.
+
+### Imperative vs. Functional  
+Illustrates the difference between imperative programming (manual loops) and functional programming (using built-in methods like filter).
+
+### Reducing Side Effects  
+Functional programming’s design reduces unintended changes to program state, leading to more predictable outcomes in code.
+
+### Multiparadigmatic Languages  
+Discusses how many modern languages allow functional programming techniques alongside object-oriented concepts.
+
+### Recursion and Higher-Order Functions  
+Explains key features of functional programming such as recursion and passing functions as parameters.
+
+### Declarative Programming  
+Highlights the shift in focus from how to achieve results to what the desired results should be.
+
+### Common Functional Methods  
+Introduces practical tools like filter, map, and sort methods used for manipulating collections in functional programming.
+
+---
+
+## Key Insights
+
+### Embracing Multiple Paradigms  
+Multi-paradigmatic languages facilitate the use of functional programming tools, allowing developers to integrate different methodologies based on the task at hand, which enhances flexibility in coding.
+
+### Code Readability and Efficiency  
+Functional programming often yields more compact and clear code compared to imperative programming. This is particularly beneficial in large, complex datasets where maintaining clarity is crucial.
+
+### State Management  
+The imperative paradigm is oftentimes error-prone due to mutable state management. Functional programming’s immutable data structures promote easier debugging and maintenance through predictable state handling.
+
+### Reducing Side Effects  
+By design, functional programming minimizes side effects, meaning functions produce the same output for the same input without altering the ongoing program state. This results in more dependable software applications.
+
+### Higher-Order Functions  
+Functions that accept other functions as arguments (i.e., higher-order functions) create new possibilities in coding patterns, which facilitate abstraction and code reuse, making development more efficient.
+
+### Recursion  
+The recursive nature of functions in pure functional languages allows for elegant solutions to problems that would traditionally require loops, showcasing the adaptability of functional programming concepts.
+
+### Common Functional Tools and Collections  
+Familiarity with tools such as filter, map, and various sorting methods empowers developers to handle collections and data structures more effectively, improving overall software performance and maintainability
