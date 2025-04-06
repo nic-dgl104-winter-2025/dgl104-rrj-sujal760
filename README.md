@@ -75,6 +75,7 @@ Developers are encouraged to refactor code opportunistically as they work on new
 Incorporating refactoring into routine development practices and code reviews can greatly enhance long-term code management and team productivity.
 
  **Tip:** Make refactoring part of your daily workflow. Use code linters, unit tests, and commit messages to track and communicate your improvements.
+ ---
 
 ## Key Insights
 
@@ -99,5 +100,62 @@ Developers grow by creating heuristics based on experience with code smells, whi
 ### Intentional Refactoring Time: 
 Developers should allocate specific time slots during their coding routine for refactoring. This practice encourages a sustainable development cycle and allows for constant code quality improvements without overwhelming projects with last-minute changes.
 
+---
 
 
+# Week 4
+## Debugging From Ashley
+
+The video discusses the apocryphal story of the first computer “bug,” which allegedly involved a moth that disrupted a computer in 1947, highlighting early computer science’s challenges and historical context. It introduces Grace Hopper, a pivotal figure in computer science, to illustrate the significant contributions of women in the field, despite historical biases. The video transitions into the broader concept of bugs in programming, defining them as small errors causing unexpected outcomes, and emphasizes the importance of good programming practices to mitigate bugs.
+
+Good coding practices highlighted include the use of clear naming conventions, self-documenting code, modularity, encapsulation, and frequent commits. The speaker discusses debugging basics, advocating for a systematic approach reminiscent of the scientific method—studying the data, hypothesizing, conducting experiments, and refining the hypothesis based on findings. Tips for effective debugging include the use of logging and breakpoints, conditional breakpoints, and employing techniques like rubber ducking, which involves explaining the code to an imaginary ally to gain clarity on problems. Emphasis is placed on intentional programming and maintaining discipline through proper coding and documentation practices.
+ 
+## Highlight From Video
+
+### First Computer Bug Story
+The accidental discovery of a moth in a computer in 1947 is humorously branded as the first computer bug.
+
+### Grace Hopper’s Contribution
+Grace Hopper is recognized as a key figure in computer science, despite historical biases against women in tech roles.
+
+### Understanding Bugs
+Bugs are defined as programming errors leading to unforeseen behaviors, underlining the necessity for good coding practices.
+
+### Importance of Documentation
+The use of self-documenting code and clear naming conventions can help streamline debugging efforts.
+
+### Systematic Debugging
+A scientific method-like approach is recommended for identifying and fixing programming bugs, stressing data analysis, hypothesis formation, and controlled experimentation.
+
+### Effective Debugging Tools
+Tools like console logs and IDE features, such as breakpoints, play a crucial role in the debugging process.
+
+### Rubber Duck Debugging
+Explaining code to a “rubber duck” is presented as a technique for revealing hidden assumptions and clarifying thinking around code problems.
+
+---
+
+## Key Insights
+
+### Historical Context of Computer Science
+The story of the first computer bug serves as a reminder of the historical challenges and pioneers in computer science, particularly illustrating how early computing was heavily intertwined with military funding and defense initiatives post-World War II.
+
+### Bugs and Their Origin
+While the 1947 moth story is entertaining, it underscores that the concept of debugging and identifying errors has roots that predate this anecdote, showcasing an evolving understanding of programming challenges.
+
+### Good Programming Practices
+Emphasizing coding conventions and modularity not only aids in debugging but positions coders to handle complex issues before they become problematic, laying groundwork for reduced errors in the long run.
+
+### Bias in Representation
+The video reveals that biases and underrepresentation in computer science have persisted over decades, prompting a need for ongoing awareness and proactive measures to celebrate contributions from diverse backgrounds.
+
+### Commitment Culture
+Regular commits allow for safer navigation of coding projects, as they provide checkpoints for developers to revert changes and avoid overwhelming layers of adjustments that could introduce new problems.
+
+### Diagnostic Tools and Techniques
+Novice programmers are encouraged to use both basic and advanced debugging tools, with a clear understanding that making informed choices about when and how to employ these tools greatly affects efficiency.
+
+### Frequent Reflection
+The rubber duck debugging technique pushes developers to explore their assumptions verbally, enhancing their understanding of the code in a collaborative yet self-reflective manner, thus tackling their own cognitive biases.
+
+This comprehensive approach not only elucidates debugging concepts but also acknowledges the interplay between historical context, programming practices, and the continuous evolution of technology in fostering a more profound comprehension of computational systems.
