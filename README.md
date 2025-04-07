@@ -40,10 +40,30 @@ The first category, code commenting, utilizes standard syntax within programming
  ### Enhancing User Experience:
   Comprehensive documentation improves the user experience by allowing anyone to understand the project without having to decipher the code itself. This fosters a collaborative culture and empowers users to contribute effectively, aligning with modern development practices.
 
+  # Example For Documenatation
 
+  ##  Documentation Examples
 
+This section demonstrates the **three main types of documentation** commonly used in programming:  
+1. Code Commenting  
+2. Standardized Documentation Comments  
+3. Project-Level Documentation (like this README)
 
+---
 
+## Code Commenting
+
+These are simple comments written inside the code to explain specific logic or clarify tricky sections. They are not auto-generated and are meant for human readers.
+
+### ✅ Example (Python)
+```
+def divide(a, b):
+    Check for division by zero to avoid an error
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
+```
+---
 
   # Week 3 
   ## Refactoring From Ashley 
@@ -100,8 +120,37 @@ Developers grow by creating heuristics based on experience with code smells, whi
 ### Intentional Refactoring Time: 
 Developers should allocate specific time slots during their coding routine for refactoring. This practice encourages a sustainable development cycle and allows for constant code quality improvements without overwhelming projects with last-minute changes.
 
----
+# Example 
 
+## 🔍 Example: Long Method (Before Refactoring)
+
+```python
+def process_order(order):
+    print("Processing order:", order)
+    if order['status'] == 'paid':
+        print("Sending confirmation email...")
+        # Send email logic here
+    if order['status'] == 'shipped':
+        print("Sending tracking number...")
+        # Tracking number logic here
+```
+### After Refactoring 
+```
+def process_order(order):
+    print("Processing order:", order)
+    if order['status'] == 'paid':
+        send_confirmation_email(order)
+    if order['status'] == 'shipped':
+        send_tracking_number(order)
+
+def send_confirmation_email(order):
+    print("Sending confirmation email...")
+    # Email logic here
+
+def send_tracking_number(order):
+    print("Sending tracking number...")
+    # Tracking logic here
+```
 
 # Week 4
 ## Debugging From Ashley
