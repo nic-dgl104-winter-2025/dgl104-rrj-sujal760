@@ -55,7 +55,7 @@ This section demonstrates the **three main types of documentation** commonly use
 
 These are simple comments written inside the code to explain specific logic or clarify tricky sections. They are not auto-generated and are meant for human readers.
 
-### ✅ Example (Python)
+###  Example (Python)
 ```
 def divide(a, b):
     Check for division by zero to avoid an error
@@ -122,7 +122,7 @@ Developers should allocate specific time slots during their coding routine for r
 
 # Example 
 
-## 🔍 Example: Long Method (Before Refactoring)
+##  Example: Long Method (Before Refactoring)
 
 ```python
 def process_order(order):
