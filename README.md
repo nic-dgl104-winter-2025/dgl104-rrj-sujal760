@@ -209,6 +209,35 @@ The rubber duck debugging technique pushes developers to explore their assumptio
 
 This comprehensive approach not only elucidates debugging concepts but also acknowledges the interplay between historical context, programming practices, and the continuous evolution of technology in fostering a more profound comprehension of computational systems.
 
+# Examples of Debugging
+
+### Debugging Examples
+
+### Example 1: JavaScript – Incorrect Variable Scope
+
+### Buggy Code
+```javascript
+function getUserName() {
+  if (true) {
+    let name = "Ashley";
+  }
+  console.log(name); // ReferenceError
+}
+getUserName();
+
+```
+### After 
+```
+function getUserName() {
+  let name;
+  if (true) {
+    name = "Ashley";
+  }
+  console.log(name); // Ashley
+}
+getUserName();
+```
+
 ## Bug Tracking 
 
 The video introduces bug and issue tracking software by explaining the fundamentals of creating effective bug reports. A bug report is a detailed step-by-step account illustrating how to reproduce a specific software bug. It should focus on documenting a single bug with clear reproduction steps and expected results. Key aspects of a bug report include specificity, relevance, and clarity, as ambiguity can lead to miscommunication and unreproducible results.
@@ -316,6 +345,37 @@ The case of the Mars Climate Orbiter illustrates how miscommunication and lack o
 ### Continuous Integration Benefits
 Utilizing tools for continuous integration enhances collaborative software development by automatically running tests, which allows teams to identify issues early and streamline code deployment efforts.
 
+# Example
+```
+Example: Testing a Function in JavaScript
+Function to be tested:
+
+javascript
+Copy
+Edit
+function addNumbers(a, b) {
+  return a + b;
+}
+```
+```
+Unit Test:
+
+javascript
+Copy
+Edit
+describe('addNumbers', () => {
+  it('should return the correct sum of two numbers', () => {
+    expect(addNumbers(2, 3)).toBe(5);
+    expect(addNumbers(-1, 1)).toBe(0);
+  });
+});
+
+Explanation:
+
+This test checks if the addNumbers function returns the correct sum when given two numeric inputs.
+
+It verifies that the code behaves correctly based on the defined requirements (summing two numbers).
+```
 ### Unit Testing as a Foundation
 Unit testing, focusing on small code units, is foundational for ensuring code integrity and establishing a robust software base that supports additional testing layers effectively.
 
