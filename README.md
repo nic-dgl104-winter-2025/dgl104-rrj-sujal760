@@ -436,6 +436,30 @@ Recognizing that development documents may quickly become outdated necessitates 
 ### Complex Features Require Detailed Attention
 Focusing on intricate software components necessitates detailed planning through functional specifications, ensuring that all functionality is adequately captured and appropriately developed.
 
+# Example of Functional User Requirement 
+## Functional User Requirements
+1. User Story: User Registration
+
+As a new user,
+I want to be able to register an account,
+So that I can access personalized features within the app.
+
+***Acceptance Criteria:***
+
+- The registration page should contain fields for the user’s name, email, and password.
+
+- The email field must validate the input to ensure it’s in a proper email format.
+
+- Password should be at least 8 characters and contain one uppercase letter, one number, and one special character.
+
+- After successful registration, the user should receive a confirmation email.
+
+- The app should notify the user if the email address is already in use.
+
+- The user should be redirected to the home page upon successful registration.
+
+
+
 
 # Week 9
 ## Design Patterns
@@ -489,6 +513,8 @@ The Observer pattern is highlighted as a significant behavioral design pattern t
 
 ### Design Patterns vs. Anti-Patterns  
 Understanding design patterns is crucial, but it’s equally important to identify anti-patterns—common mistakes made during the software development process. This awareness fosters better coding practices by preventing developers from repeating ineffective strategies. Engaging with local communities can help developers stay informed about best practices and emerging trends in their programming languages.
+
+
 
 # Week 10 
 ## MV Patterns
@@ -546,6 +572,54 @@ The distinct separation inherent in MV Star patterns provides a structured envir
 
 ### Future of GUI Patterns  
 As technology evolves, there is potential for emerging GUI architectural patterns that can further improve modularity and maintainability in software development. Keeping up with these trends is essential for developers looking to enhance their skills and deliver robust applications.
+
+# Example 
+
+Code Example (Python - Simple User Management):
+python
+Copy
+Edit
+
+## Model: Manages data logic
+```
+class User:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+       
+ ```
+
+## View: Responsible for displaying the user data
+```
+class UserView:
+    def display_user(self, user):
+        print(f"User Info: Name - {user.name}, Email - {user.email}")
+        ```
+
+## Controller: Handles the logic between the Model and View
+```
+class UserController:
+    def __init__(self, user, view):
+        self.user = user
+        self.view = view
+
+    def update_user(self, name, email):
+        self.user.name = name
+        self.user.email = email
+        self.view.display_user(self.user)
+        ```
+
+# #Main execution
+```
+if __name__ == "__main__":
+    user = User("John Doe", "john@example.com")
+    view = UserView()
+    controller = UserController(user, view)
+
+    # Controller updates Model and View
+    controller.update_user("Jane Doe", "jane@example.com")
+```
+
 
 # Week 11
 ## OPP Part 1
