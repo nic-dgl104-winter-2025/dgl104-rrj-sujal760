@@ -673,6 +673,40 @@ OOP belongs to the imperative programming paradigm, where the focus is on how ta
 
 ### Critiques of OOP  
 While OOP can be robust, it is not universally the best choice. Data-heavy applications may benefit from more functional or procedural programming styles. Recognizing the limitations and critiques of OOP is essential for grasping when to apply it effectively.
+# Example 
+
+### Class and Object Example (Python)
+In this example, we'll define a simple Car class and create an object (instance) of that class.
+
+# Class definition: Car
+```
+class Car:
+    # Constructor: Initializes the object with attributes
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    # Method: Describes the car
+    def display_info(self):
+        print(f"{self.year} {self.make} {self.model}")
+
+## Create an object (instance) of the Car class
+my_car = Car("Toyota", "Camry", 2020)
+
+# Access method from the object
+my_car.display_info()  # Output: 2020 Toyota Camry
+```
+### Explanation:
+
+- The Car class is a blueprint for creating car objects.
+
+- The __init__() method is a special constructor method that is called when we create a new object.
+
+- display_info() is a method that prints out the car's details.
+
+- my_car is an instance of the Car class.
+
 
 
 # Week 11 
@@ -783,3 +817,52 @@ The recursive nature of functions in pure functional languages allows for elegan
 
 ### Common Functional Tools and Collections  
 Familiarity with tools such as filter, map, and various sorting methods empowers developers to handle collections and data structures more effectively, improving overall software performance and maintainability
+
+# Examples 
+### Imperative Approach (Using Loops)
+In the imperative approach, we manually manage the control flow (loops) and state (creating a new list).
+```
+fun extractEvenNumbersImperative(numbers: List<Int>): List<Int> {
+    val evenNumbers = mutableListOf<Int>()
+    
+    for (number in numbers) {
+        if (number % 2 == 0) {
+            evenNumbers.add(number)
+        }
+    }
+    
+    return evenNumbers
+}
+
+fun main() {
+    val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
+    val evenNumbers = extractEvenNumbersImperative(numbers)
+    println(evenNumbers)  // Output: [2, 4, 6, 8]
+}
+```
+### Explanation:
+
+We use a for loop to iterate over each number.We explicitly check if the number is even and add it to the evenNumbers list.
+
+This approach requires careful management of state (creating a mutable list) and control flow (looping through the list).
+
+## Functional Approach (Using Higher-Order Functions)
+In the functional programming approach, we use higher-order functions like filter to abstract away the control flow, leading to more concise and readable code.
+
+```
+fun extractEvenNumbersFunctional(numbers: List<Int>): List<Int> {
+    return numbers.filter { it % 2 == 0 }
+}
+
+fun main() {
+    val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
+    val evenNumbers = extractEvenNumbersFunctional(numbers)
+    println(evenNumbers)  // Output: [2, 4, 6, 8]
+}
+```
+## Explanation:
+
+The filter function is a higher-order function that takes a predicate (a function that returns a Boolean) to check each item in the list.The code is more concise and expressive, as we don't need to explicitly manage loops or mutable lists.
+
+This is a declarative approach, where we declare what we want to do (filter even numbers), not how we want to do it.
+
